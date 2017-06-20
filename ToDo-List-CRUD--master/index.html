@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/models/item.js"></script>
+    <script src="js/models/itemOperation.js"></script>
+    <script src="js/controlers/itemcontroller.js"></script>
+    <link rel="stylesheet" href="stylesheet/main.css">
+    
+</head>
+
+<body>
+    <h1>Item Crud</h1>
+    <fieldset>
+        <legend>Item-CRUD Operations</legend>
+        <table>
+            <tr>
+                <td>
+                    <label for="">Item No</label>
+                </td>
+                <td>
+                    <label id="id">1</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Name</label>
+                </td>
+                <td>
+                    <input type="text" id="name" class="cf" placeholder="item name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="" >Desc</label>
+                </td>
+                <td>
+                    <textarea name="" id="desc" cols="30" rows="6" class="cf" placeholder="description"></textarea>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="">Price</label></td>
+                 <td>
+                    <input type="text" class="cf" id="price" placeholder="price">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="" >URL</label></td>
+                 <td>
+                    <input type="url" class="cf" id="url" placeholder="URl">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td><button class="bt" id="addBt">Add</button></td>
+                            <td><button id="delete" class="bt">Delete</button></td>
+                            <td><button id="search" class="bt">Search</button></td>
+                            <td><button id="update">Update</button></td>
+                            <td><button id="saveBt" class="bt">Save</button></td>
+                            <td><button id="loadBt" class="bt">Load</button></td>
+                            <td><button id="sortBt" class="bt">Sort</button></td>
+                            <td><button>Save to Server</button></td>
+                            <td><button id="clear" class="bt">Clear</button></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Item List</legend>
+        <table border="1">
+           <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Operations</th>
+                
+            </tr>
+            </thead>
+            <tbody id="itemTableBody">
+                
+            </tbody>
+        </table>
+    </fieldset>
+</body>
+
+</html>

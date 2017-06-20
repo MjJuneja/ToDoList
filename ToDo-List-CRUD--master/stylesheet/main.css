@@ -1,0 +1,51 @@
+.showcursor{
+    cursor: pointer;
+    
+}
+.showgreen{
+    background: green;
+}
+
+.showred{
+    background: red;
+}
+
+ul{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+}
+
+li{
+    padding: 0px;
+    text-align: left;
+}
+
+li>ul{
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+
+li>ul li{
+   
+   background: #333;
+   color:yellow;
+   border: 1px solid lightblue;
+} 
+
+li>ul li button{
+    
+    padding-left: 2px;
+    text-align: left;
+    width: 100%;
+}
+ul:hover li>ul{
+    display: block;
+}
+
+.bt1{
+        cursor: not-allowed;
+        pointer-events: none;
+}
